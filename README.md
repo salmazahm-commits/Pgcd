@@ -24,7 +24,6 @@ int main() {
 
         printf("%d = %d * %d + %d\n", a, q, b, r);
 
-        // Remontée d’Euclide
         x = x0 - q * x1;
         y = y0 - q * y1;
 
@@ -45,7 +44,7 @@ int main() {
     }
 
     
-    printf("\n--- COEFFICIENTS DE BEZOUT u et v en utilisant la Remonte d'Euclide. ---\n");
+    printf("\n--- COEFFICIENTS DE BEZOUT u et v en utilisant la REMONTE d'EUCLIDE. ---\n");
     printf("%d * (%d) + %d * (%d) = %d\n", A, x0, B, y0, pgcd);
     printf("Alors u =%d et v=%d",x0,y0);
     printf("\n---CALCUL DE PPCM---n\");
