@@ -10,7 +10,7 @@ int main() {
     int x, y;
 
     printf("Entrer premier entier A : ");
-    scanf("%d", &A);
+    scanf("%d",&A);
     printf("Entrer le deuxième entier B :");
     scanf("%d",&B);
     a = A;
@@ -55,6 +55,6 @@ int main() {
     printf("PPCM(%d, %d) = %d\n", A, B, ppcm);
     printf("PPCM(%d,%d) * PGCD(%d,%d)= %d\n",A,B,A,B,A*B);
     printf("ALORS le PPCM DE %d et %d est:\n",A,B);
-    printf("\nPPCM(%d,%d)=%d\n",A,B,ppcm");
+    printf("PPCM(%d,%d)=%d\n",A,B,ppcm");
     return 0;
 }
