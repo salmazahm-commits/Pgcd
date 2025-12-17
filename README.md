@@ -9,9 +9,10 @@ int main() {
     int x1 = 0, y1 = 1;
     int x, y;
 
-    printf("Entrer deux entiers A et B : ");
-    scanf("%d %d", &A, &B);
-
+    printf("Entrer premier entier A : ");
+    scanf("%d", &A);
+    printf("Entrer le deuxième entier B :");
+    scanf("%d",&B);
     a = A;
     b = B;
 
@@ -41,18 +42,19 @@ int main() {
     printf("\nPGCD(%d, %d) = %d\n", A, B, pgcd);
     if (pgcd == 1) {
         printf("Les deux nombres sont premiers entre eux.\n");
-    } else {
-        printf("Les deux nombres ne sont pas premiers entre eux.\n");
     }
 
     
-    printf("\n--- COEFFICIENTS DE BEZOUT (Remontee d'Euclide) ---\n");
+    printf("\n--- COEFFICIENTS DE BEZOUT u et v en utilisant la Remonte d'Euclide. ---\n");
     printf("%d * (%d) + %d * (%d) = %d\n", A, x0, B, y0, pgcd);
-
+    printf("Alors u =%d et v=%d",x0,y0);
+    printf("\n---CALCUL DE PPCM---n\");
 
     int ppcm = (A * B) / pgcd;
 
-    printf("\nPPCM(%d, %d) = %d\n", A, B, ppcm);
-
+    printf("PPCM(%d, %d) = %d\n", A, B, ppcm);
+    printf("PPCM(%d,%d) * PGCD(%d,%d)= %d\n",A,B,A,B,A*B);
+    printf("ALORS le PPCM DE %d et %d est:\n",A,B);
+    printf("\nPPCM(%d,%d)=%d\n",A,B,ppcm");
     return 0;
 }
