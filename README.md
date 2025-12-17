@@ -1,4 +1,4 @@
-# Pgcd
+# PGCD ET PPCM DE DEUX ENTIERS 
 #include <stdio.h>
 
 int main() {
