@@ -64,7 +64,7 @@ int main()
     printf("Solution particuliere est : (x0, y0) = (%d, %d)\n", x0, y0);
 
     printf("la solution generale:\n");
-    printf("\nSolution generale :\n");
+ 
     printf("x = %d + k * %d\n", x0, B / d);
     printf("y = %d - k * %d\n", y0, A / d);
     printf("avec k appartenant a Z\n");
