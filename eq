@@ -61,7 +61,7 @@ int main()
     x0 = x0 * (c / d);
     y0 = y0 * (c / d);
 
-    printf("Solution particuliere : (x0, y0) = (%d, %d)\n", x0, y0);
+    printf("Solution particuliere est : (x0, y0) = (%d, %d)\n", x0, y0);
 
     printf("la solution generale:\n");
     printf("\nSolution generale :\n");
