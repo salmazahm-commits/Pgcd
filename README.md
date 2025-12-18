@@ -57,11 +57,12 @@ int main() {
     printf("PPCM(%d,%d)=%d\n",A,B,ppcm");
     return 0;
 }
-#equation diophantienne :
+
+
+
 #equation diophantienne
 #include <stdio.h>
 
-/* Calcul du PGCD (méthode d’Euclide simple) */
 int pgcd(int a, int b)
 {
     while (b != 0)
