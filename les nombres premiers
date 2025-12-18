@@ -1,34 +1,25 @@
 # tester si un nombre est premier ou non .
+
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int A, i;
-    int estPremier = 1;   
 
-    printf("Entrer un entier A : ");
+    printf("Entrez un nombre A : ");
     scanf("%d", &A);
 
-    if (A <= 1)
-    {
-        estPremier = 0;
+    if (A <= 1) {
+        printf("%d n'est pas un nombre premier.\n", A);
+        return 0;
     }
-    else
-    {
-        // Test de divisibilité
-        for (i = 2; i < A; i++)
-        {
-            if (A % i == 0)
-            {
-                estPremier = 0;
-                break;
-            }
+
+    for (i = 2; i <= A / 2; i++) {
+        if (A % i == 0) {
+            printf("%d n'est pas un nombre premier.\n", A);
+            return 0;
         }
     }
-    if (estPremier == 1)
-        printf("%d est un nombre premier.\n", A);
-    else
-        printf("%d n'est pas un nombre premier.\n", A);
 
+    printf("%d est un nombre premier.\n", A);
     return 0;
 }
